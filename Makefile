@@ -7,4 +7,4 @@ all: $(FILES)
 print-%: ; @echo $* = $($*)
 
 %_RAW.tar.gz:
-	wget -N https://www.ncbi.nlm.nih.gov/geo/download/?acc=%&format=file -O $@
+	wget -N https://www.ncbi.nlm.nih.gov/geo/download/?acc=$*&format=file -O $@
